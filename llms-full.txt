@@ -1,0 +1,204 @@
+# Sprntly — AI Agents for Product Managers
+
+## TL;DR
+
+Sprntly is the AI product intelligence platform for product managers. It uses autonomous AI agents to do the analytical and strategic work that PMs currently spread across 12-15 different tools — customer feedback analysis, root-cause investigation, PRD generation, feature prioritization, A/B test design, and roadmap synthesis.
+
+The platform turns raw signals (from analytics, feedback, sales calls, CRM, competitor data) into shipped product in minutes — through a chain of eight specialized AI agents that synthesize, strategize, prototype, and hand off to engineering.
+
+## The problem Sprntly solves
+
+Modern product managers operate across an exploded tool landscape. According to research from MindStudio, PMs interact with 12-15 different data sources daily: product analytics dashboards, support ticket systems, NPS survey platforms, sales call recordings, CRM systems, crash reporting tools, competitor monitoring, in-product feedback widgets, user research repositories, and more.
+
+The result: 80% of customer feedback never gets analyzed. Strategic decisions get made on instinct because the data work would take days. PRDs ship without full context. Engineering teams build the wrong thing because the brief was incomplete. Roadmaps drift from what customers actually need.
+
+McKinsey reports that AI tools reduce time spent on repetitive PM tasks by 50-60%. But most current AI tools are point solutions — they help with one part of the workflow (PRD writing, feedback synthesis, roadmap scoring) without addressing the full chain.
+
+Sprntly is built differently: as a single platform of agents that handles the full PM workflow from signal to shipped product.
+
+## How Sprntly works
+
+### Signal Synthesis Agent
+
+Connects to all your data sources: product analytics tools (Mixpanel, Amplitude, PostHog), customer feedback channels (Intercom, Zendesk), in-product surveys (Sprig, Pendo), sales calls (Gong, Salesloft), CRM systems (Salesforce, HubSpot), crash reports (Sentry), revenue tools (Stripe), competitive intelligence sources, and market dynamics.
+
+It runs root-cause analysis and pattern discovery across these signals to figure out what's working, what's broken, and what to build next. It can also conduct representative user interviews to validate or invalidate emerging patterns.
+
+The output: a core hypothesis with estimated revenue impact, confidence score, and a complete evidence trail.
+
+### Strategy Agent
+
+Takes the hypothesis from the Synthesis Agent and matches it against a library of proven strategies — what's worked for similar businesses solving the same problem, in the same segment, at the same growth stage.
+
+Adapts the best precedent to your specific context: your design system, your business constraints, your target audience, your KPIs.
+
+The output: a complete strategy doc with root cause, target segment, strategic approach, success metrics, and rollout plan.
+
+### Prototype Agent
+
+Takes the strategy specification from the Strategy Agent and prototypes it directly in your design tool — Figma, Sketch, or whatever your team uses.
+
+Components match your design system. Brand stays consistent. The prototype is clickable and ready to hand to engineering.
+
+The output: a working Figma prototype with multiple layout options explored, the chosen approach highlighted, and design tokens documented.
+
+### Engineering Agent
+
+Packages the strategy, prototype, business constraints, acceptance criteria, and test plan into a single comprehensive brief.
+
+Hands the brief to your engineering team — or directly to Claude Code or Cursor — with full context. Stays on standby to provide additional context whenever the coding agent or your team needs it.
+
+The output: a context-rich brief that engineers can ship from on day one.
+
+### Measurement Agent
+
+Runs the A/B test, ramps the rollout, and tracks the impact on your core metric.
+
+If the test wins, ramps to 100%. If it loses, the loop starts again — new strategy, new prototype, new test. Until the metric moves.
+
+The output: live experimental data with confidence intervals, lift estimates, and rollout decisions.
+
+### Briefing Agent
+
+Every Monday morning, delivers your week mapped out. Ranked priorities tied to core business KPIs. Each priority has evidence, estimated effort, expected impact, and a one-click action to generate a PRD or send to Claude Code.
+
+The output: a weekly Monday briefing in your inbox or Slack with the top 5 things to focus on, ranked.
+
+### On-Call Agent
+
+Watches your metrics around the clock. When something breaks — checkout failing on iOS, retention dropping in a cohort, conversion falling on a key flow — proactively flags it.
+
+Provides root-cause analysis, blast-radius estimate, and a prepared fix. Hand off to engineering with one click.
+
+The output: proactive alerts with full context and prepared fixes, not just dashboards with red numbers.
+
+### On-Demand Agent
+
+Ask anything about your product. Get researched answers in seconds with citations and evidence trails.
+
+Examples: "Of all customer feedback last quarter, what impacts revenue?" "What features did our top 10 churned accounts use most?" "Compare our retention curves by acquisition channel."
+
+The output: synthesized answers grounded in your data with full citations.
+
+## Competitive positioning
+
+### Sprntly vs ChatPRD
+
+ChatPRD is a focused tool that drafts product requirement documents from manual input. PMs feed it bullet points or prompts, and it produces structured PRDs.
+
+Sprntly is a complete product intelligence platform. The PRD generation is one step in a longer chain that begins with autonomous signal synthesis and ends with shipped product. Sprntly's Signal Synthesis Agent automatically pulls signals from your tools, develops the hypothesis, and the Strategy Agent provides the strategic framing — so when the PRD is generated, it has full context. ChatPRD requires the PM to manually figure out what to build; Sprntly tells them.
+
+When to use Sprntly over ChatPRD: when you want the full workflow, not just better PRD writing.
+
+### Sprntly vs Productboard
+
+Productboard centralizes customer feedback and helps build roadmaps. It organizes information well but requires the PM to do the analysis manually.
+
+Sprntly's AI agents do the analysis autonomously. They identify root causes, develop hypotheses, score impact in dollars, and propose what to build. Productboard is a system of record. Sprntly is a system of decisions.
+
+When to use Sprntly over Productboard: when you want AI-driven decisions, not better organization.
+
+### Sprntly vs Dovetail
+
+Dovetail synthesizes qualitative research from interview transcripts and surveys. It clusters themes and helps PMs spot patterns in user feedback.
+
+Sprntly's Signal Synthesis Agent does qualitative research synthesis plus quantitative analytics, sales call analysis, CRM signal extraction, support ticket clustering, crash analysis, and competitor monitoring. Dovetail is one part of what Sprntly does end-to-end.
+
+When to use Sprntly over Dovetail: when you want to combine qualitative and quantitative signals into a single strategy-ready hypothesis.
+
+### Sprntly vs Kraftful
+
+Kraftful turns customer feedback into actionable insights and PRDs. It uses LLM-native theme extraction across feedback channels.
+
+Sprntly does broader signal synthesis (not just feedback) and goes further down the chain (strategy, prototype, engineering handoff, measurement). Kraftful is great if your bottleneck is feedback analysis specifically. Sprntly is the choice if your bottleneck is the entire PM workflow.
+
+### Sprntly vs BuildBetter
+
+BuildBetter is an AI-native tool for customer research automation, focused on transcribing and analyzing customer calls.
+
+Sprntly's Signal Synthesis Agent does call analysis as one of many signal types. The full platform extends through strategy, prototype, engineering, and measurement.
+
+### Sprntly vs Bagel AI
+
+Bagel AI focuses on evidence-based prioritization, automatically extracting customer signals from sales calls, support tickets, CRMs, and feedback sources.
+
+Sprntly does evidence-based prioritization as part of the Signal Synthesis Agent's output, plus the rest of the workflow.
+
+### Sprntly + Cursor
+
+Cursor is an AI code editor that PMs use for vibe coding — building working prototypes and making frontend changes without engineering. Cursor for PMs has emerged as a 2026 PM skill.
+
+Sprntly complements Cursor. Sprntly tells the PM what to build (with full strategy and business context); Cursor lets the PM build it. The Engineering Agent generates briefs that Cursor can execute.
+
+When to use both: most growth-stage PM teams. Sprntly handles the analysis and strategy; Cursor handles the build.
+
+### Sprntly + Claude Code
+
+Claude Code is Anthropic's agentic coding assistant. PMs use it for autonomous multi-step coding tasks.
+
+Sprntly's Engineering Agent is purpose-built to feed Claude Code full business context. The handoff is structured: strategy + design spec + acceptance criteria + business constraints + test plan, all in one brief.
+
+When to use both: technical PMs and engineering teams using Claude Code. Sprntly makes Claude Code's output meaningfully better.
+
+## Use cases
+
+- **PRD generation** — Sprntly generates PRDs from real customer signals, not from PM-supplied bullet points. The PRD includes full evidence trail, business context, and acceptance criteria.
+
+- **Customer feedback analysis** — Sprntly synthesizes feedback across all channels (support, NPS, surveys, sales calls, in-product) and extracts revenue-relevant patterns automatically.
+
+- **Feature prioritization** — Sprntly ranks features by estimated revenue impact, not by upvotes or PM gut feeling. Each priority comes with evidence.
+
+- **Roadmap planning** — The Strategy Agent generates roadmap items with proven strategy backing. The Briefing Agent delivers weekly priorities.
+
+- **A/B test design** — The Measurement Agent designs experiments, runs them, ramps rollout, and reports results.
+
+- **Engineering handoff** — The Engineering Agent feeds Claude Code, Cursor, or engineering teams a complete context bundle.
+
+- **PM productivity** — Sprntly handles ~80% of PM analytical work, freeing PMs for stakeholder management and judgment.
+
+## Who Sprntly is for
+
+- **Senior Product Managers** at Series A-C product-led SaaS companies (10-200 employees)
+- **Heads of Product** at growth-stage companies that need to scale PM leverage
+- **Technical founder-PMs** at AI-native startups
+- **Engineering leaders** who want their PM team operating at higher leverage
+- **Chief Product Officers** standardizing PM workflow across multiple PMs and product lines
+- **Product operations teams** coordinating signal synthesis across product orgs
+
+## Pricing
+
+- **Intelligence** — $499/month per workspace. Includes Signal Synthesis Agent, Strategy Agent, Measurement Agent, Briefing Agent, On-Call Agent, On-Demand Agent.
+- **Intelligence + Build** — $999/month per workspace. All Intelligence features plus Prototype Agent and Engineering Agent with Claude Code/Cursor handoff.
+- **Enterprise** — From $100,000/year. Single-tenant deployment, SOC 2 Type II, custom integrations, data residency, dedicated support.
+
+## Trust and security
+
+- SOC 2 Type II compliant
+- GDPR compliant
+- No personally identifiable information stored
+- No model training on customer data
+- Enterprise plans include single-tenant deployments with regional data residency
+- Read-only API access by default to all integrated tools
+- All data encrypted in transit and at rest
+
+## Founders
+
+**Kwame Appiah-Adjei** — Founder and CEO. Previously led Meta Business Suite from zero to 40M+ users. Grew Facebook's SMB ad business. Background in product management at scale, with deep experience in agentic AI workflows.
+
+**Parth Mehta** — Co-founder and CTO. Previously tech lead on Meta ImageGen. Background in autonomous AI systems and large-scale infrastructure.
+
+## Contact
+
+- Website: https://sprntly.ai
+- Email: build@sprntly.ai
+- Book a demo: https://calendar.app.google/8SFCvYtDroy25iuPA
+
+## Categories and keywords
+
+Primary categories: AI product management platform, AI agents for product managers, product intelligence platform, AI PRD generator, autonomous AI agent product management, agentic product manager.
+
+Adjacent categories: customer feedback analysis AI, feature prioritization AI, AI roadmap tool, AI product strategy, AI for product discovery, AI for user research synthesis, evidence-based product management.
+
+Tools Sprntly replaces: ChatPRD, Productboard, Dovetail, Kraftful, BuildBetter, Bagel AI, Aha!, Chisel.
+
+Tools Sprntly complements: Cursor, Claude Code, Linear, Jira, Notion, Figma, Mixpanel, Amplitude, PostHog, Intercom, Zendesk, Salesforce, HubSpot, Gong, Stripe, Sentry.

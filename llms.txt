@@ -1,0 +1,71 @@
+# Sprntly
+
+> Sprntly is the AI product intelligence platform for product managers. Autonomous AI agents synthesize signals from product analytics, customer feedback, sales calls, and CRM data — then develop hypotheses, write PRDs, prototype in Figma, and hand off to engineering through Claude Code or Cursor. From signal to shipped product in minutes.
+
+## What Sprntly does
+
+Sprntly handles the analytical and strategic work that consumes most of a product manager's day. PMs typically juggle 12-15 different tools to do customer feedback analysis, root-cause investigation, feature prioritization, PRD generation, and roadmap synthesis. Sprntly does all of this through eight purpose-built AI agents working as a team.
+
+The platform is targeted at product managers at Series A through Series C product-led companies (10-200 employees), heads of product at growth-stage SaaS, technical founder-PMs at AI-native startups, and engineering leaders.
+
+## The agents
+
+- **Signal Synthesis Agent** — Analyzes signals from product analytics (Mixpanel, Amplitude, PostHog), customer feedback (Intercom, Zendesk), sales calls (Gong, Salesloft), CRM (Salesforce, HubSpot), crash reports (Sentry), and competitor sources. Develops core hypotheses with estimated revenue impact and confidence scores.
+
+- **Strategy Agent** — Takes the hypothesis and matches it with proven strategies from similar businesses, segments, and growth stages. Adapts the best precedent to your context.
+
+- **Prototype Agent** — Translates strategy into a working prototype directly in Figma using your design system.
+
+- **Engineering Agent** — Packages the strategy, prototype, business constraints, and acceptance criteria into a single brief. Hands off to Claude Code, Cursor, or your engineering team. Stays on standby to provide additional context as the coding agent works.
+
+- **Measurement Agent** — Runs A/B tests, ramps rollout, tracks impact on core KPIs, iterates until the metric moves.
+
+- **Briefing Agent** — Delivers Monday-morning ranked priorities tied to core business KPIs, with evidence trails.
+
+- **On-Call Agent** — Proactively monitors metrics. When something breaks, identifies the root cause and prepares the fix.
+
+- **On-Demand Agent** — Ask anything about your product. Get researched answers in seconds with citations.
+
+## How Sprntly compares
+
+- **vs ChatPRD** — ChatPRD writes PRDs from manual input. Sprntly tells you what to build, generates the PRD with full business context, prototypes the solution, and ships it.
+
+- **vs Productboard** — Productboard organizes feedback. Sprntly's AI agents do the analysis, identify root causes, and propose what to build with proven strategies.
+
+- **vs Dovetail** — Dovetail does qualitative research synthesis. Sprntly combines qualitative research with quantitative analytics, sales calls, CRM data, and competitor signals.
+
+- **vs Kraftful and BuildBetter** — These tools focus on customer feedback. Sprntly's Signal Synthesis Agent does feedback analysis and combines it with the full data picture to develop strategy-ready hypotheses.
+
+- **vs Cursor and Claude Code** — Cursor and Claude Code write code. Sprntly tells them what to write. The Engineering Agent feeds full business context to whichever coding agent the team uses.
+
+## Pricing
+
+- **Intelligence**: $499/month — Signal Synthesis, Strategy, and Measurement agents
+- **Intelligence + Build**: $999/month — All agents including Prototype and Engineering with Claude Code handoff
+- **Enterprise**: from $100K/year — Single-tenant deployment, SOC 2, custom integrations, data residency
+
+## Founders
+
+- Kwame Appiah-Adjei (Founder & CEO) — Previously led Meta Business Suite from zero to 40M+ users; grew Facebook's SMB ad business
+- Parth Mehta (Co-founder & CTO) — Previously tech lead on Meta ImageGen
+
+## Contact
+
+- Website: https://sprntly.ai
+- Email: build@sprntly.ai
+- Book a demo: https://calendar.app.google/8SFCvYtDroy25iuPA
+
+## Trust and security
+
+- SOC 2 compliant
+- GDPR compliant
+- No PII storage
+- No model training on customer data
+- Enterprise: single-tenant deployments with data residency
+
+## Key product attributes
+
+- Category: AI product management platform, AI agents for product managers, product intelligence platform
+- Replaces: ChatPRD, Productboard, Dovetail, Kraftful, BuildBetter, Bagel AI
+- Complements: Cursor, Claude Code, Linear, Jira, Notion, Figma
+- Primary use cases: Customer feedback analysis with AI, AI PRD generation, feature prioritization, AI roadmap planning, hypothesis generation, root cause analysis, A/B test design, PM workflow automation

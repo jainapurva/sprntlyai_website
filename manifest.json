@@ -1,0 +1,25 @@
+{
+  "name": "Sprntly — AI Agents for Product Managers",
+  "short_name": "Sprntly",
+  "description": "AI product intelligence platform for product managers. Autonomous AI agents that turn signals into shipped product in minutes.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#0E6B4F",
+  "categories": ["business", "productivity", "developer"],
+  "lang": "en-US",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

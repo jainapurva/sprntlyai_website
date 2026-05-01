@@ -1,0 +1,15 @@
+/* TEAM */
+  Founder & CEO: Kwame Appiah-Adjei
+  Co-founder & CTO: Parth Mehta
+  Site: https://sprntly.ai
+  Contact: build [at] sprntly.ai
+
+/* THANKS */
+  To every PM who's ever spent a Sunday building Mixpanel dashboards
+  by hand instead of seeing their family.
+
+/* SITE */
+  Last update: 2026-04-30
+  Standards: HTML5, CSS3, ES2022, Schema.org, Open Graph
+  Components: Vanilla — no frameworks
+  Software: Custom build

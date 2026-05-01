@@ -1,0 +1,86 @@
+# Sprntly — robots.txt
+# Last updated: 2026-04-30
+
+# Default — allow all
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /tmp/
+
+# ═══════════════════════════════════════════════════════
+# AI search crawlers — explicitly allowed
+# These are the bots that train and index for AI search
+# (ChatGPT, Claude, Perplexity, Gemini, etc.)
+# ═══════════════════════════════════════════════════════
+
+# OpenAI / ChatGPT
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic / Claude
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Google Gemini / SGE
+User-agent: Google-Extended
+Allow: /
+
+# Common Crawl (used by many LLMs for training)
+User-agent: CCBot
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+# Meta / Llama
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Bing / Copilot
+User-agent: Bingbot
+Allow: /
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+
+# Yandex
+User-agent: YandexBot
+Allow: /
+
+# ═══════════════════════════════════════════════════════
+# Sitemap
+# ═══════════════════════════════════════════════════════
+Sitemap: https://sprntly.ai/sitemap.xml
