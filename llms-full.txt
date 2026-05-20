@@ -191,7 +191,7 @@ When to use both: technical PMs and engineering teams using Claude Code. Sprntly
 
 - Website: https://sprntly.ai
 - Email: build@sprntly.ai
-- Book a demo: https://calendar.app.google/8SFCvYtDroy25iuPA
+- Interest form: https://sprntly.ai/#interest-form
 
 ## Categories and keywords
 
