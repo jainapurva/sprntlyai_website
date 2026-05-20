@@ -43,9 +43,13 @@ function showEmailPopup() {
   setTimeout(() => emailPopup.classList.remove('show'), 5000);
 }
 
-async function captureEmail(email, source) {
+async function captureEmail(payload, source) {
+  // Normalize: handler may pass either an email string (legacy) or a full payload object
+  const data = typeof payload === 'string' ? { email: payload } : { ...payload };
+  const email = data.email;
+
   // Always log locally so you see something even if the backend fails
-  console.log('[Sprntly waitlist]', { email, source, ts: new Date().toISOString() });
+  console.log('[Sprntly waitlist]', { ...data, source, ts: new Date().toISOString() });
 
   try {
     if (EMAIL_PROVIDER === 'formspree') {
@@ -55,7 +59,7 @@ async function captureEmail(email, source) {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ email, source })
+        body: JSON.stringify({ ...data, source })
       });
       if (!res.ok) throw new Error(`Formspree ${res.status}`);
       return { ok: true };
@@ -66,7 +70,7 @@ async function captureEmail(email, source) {
       await fetch(GOOGLE_SHEETS_URL, {
         method: 'POST',
         mode: 'no-cors',
-        body: JSON.stringify({ email, source, ts: new Date().toISOString() })
+        body: JSON.stringify({ ...data, source, ts: new Date().toISOString() })
       });
       return { ok: true };
     }
@@ -74,6 +78,9 @@ async function captureEmail(email, source) {
     if (EMAIL_PROVIDER === 'loops') {
       const formData = new FormData();
       formData.append('email', email);
+      if (data.firstName) formData.append('firstName', data.firstName);
+      if (data.lastName) formData.append('lastName', data.lastName);
+      if (data.company) formData.append('company', data.company);
       formData.append('source', source);
       const res = await fetch(LOOPS_FORM_URL, { method: 'POST', body: formData });
       if (!res.ok) throw new Error(`Loops ${res.status}`);
@@ -93,11 +100,29 @@ async function captureEmail(email, source) {
 document.querySelectorAll('.email-capture').forEach(form => {
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const input = form.querySelector('input[type="email"]');
+    const emailInput = form.querySelector('input[type="email"]');
     const button = form.querySelector('button[type="submit"]');
-    if (!input || !input.value) return;
+    if (!emailInput || !emailInput.value) return;
 
-    const email = input.value.trim();
+    const getVal = (name) => {
+      const el = form.querySelector(`input[name="${name}"]`);
+      return el ? el.value.trim() : '';
+    };
+
+    const payload = {
+      email: emailInput.value.trim(),
+      firstName: getVal('firstName'),
+      lastName: getVal('lastName'),
+      company: getVal('company')
+    };
+    // Required fields: email always; firstName/lastName when present on the form
+    const firstNameEl = form.querySelector('input[name="firstName"]');
+    const lastNameEl = form.querySelector('input[name="lastName"]');
+    if ((firstNameEl && !payload.firstName) || (lastNameEl && !payload.lastName)) {
+      (firstNameEl && !payload.firstName ? firstNameEl : lastNameEl).focus();
+      return;
+    }
+
     const source = form.id || 'unknown';
     const originalLabel = button ? button.textContent : '';
 
@@ -107,9 +132,9 @@ document.querySelectorAll('.email-capture').forEach(form => {
       button.textContent = 'Sending...';
     }
 
-    await captureEmail(email, source);
+    await captureEmail(payload, source);
 
-    input.value = '';
+    form.querySelectorAll('input').forEach(i => { i.value = ''; });
     if (button) {
       button.disabled = false;
       button.style.opacity = '';

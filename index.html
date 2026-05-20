@@ -344,11 +344,16 @@
         <p class="hero-sub">
           From signals and ideas to live product in minutes — powered by your data, your business context, and AI.
         </p>
-        <form id="interest-form" class="email-capture" novalidate>
+        <form id="interest-form" class="email-capture interest-form" novalidate>
+          <div class="interest-row">
+            <input type="text" name="firstName" placeholder="First name" autocomplete="given-name" required>
+            <input type="text" name="lastName" placeholder="Last name" autocomplete="family-name" required>
+          </div>
           <input type="email" name="email" placeholder="you@company.com" autocomplete="email" required>
+          <input type="text" name="company" placeholder="Company (optional)" autocomplete="organization">
           <button type="submit" class="email-submit">I'm interested →</button>
         </form>
-        <p class="interest-hint">Drop your email — we'll reach out when Sprntly is ready for you. No spam.</p>
+        <p class="interest-hint">Drop your details — we'll reach out when Sprntly is ready for you. No spam.</p>
       </div>
 
       <!-- HERO DEMO -->
