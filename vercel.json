@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/demo",
+      "destination": "https://api.sprntly.ai/demo/"
+    },
+    {
+      "source": "/demo/",
+      "destination": "https://api.sprntly.ai/demo/"
+    },
+    {
+      "source": "/demo/:path*",
+      "destination": "https://api.sprntly.ai/demo/:path*"
+    }
+  ]
+}
