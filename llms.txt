@@ -53,7 +53,7 @@ The platform is targeted at product managers at Series A through Series C produc
 
 - Website: https://sprntly.ai
 - Email: build@sprntly.ai
-- Book a demo: https://calendar.app.google/8SFCvYtDroy25iuPA
+- Interest form: https://sprntly.ai/#interest-form
 
 ## Trust and security
 

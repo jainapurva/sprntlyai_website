@@ -113,7 +113,7 @@ document.querySelectorAll('.email-capture').forEach(form => {
     if (button) {
       button.disabled = false;
       button.style.opacity = '';
-      button.textContent = originalLabel || 'Get early access →';
+      button.textContent = originalLabel || "I'm interested →";
     }
     showEmailPopup();
   });
