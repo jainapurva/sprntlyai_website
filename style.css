@@ -409,6 +409,30 @@ h1.hero-title em {
   .email-submit { width: 100%; }
 }
 
+/* Multi-field interest form (firstName + lastName + email + optional company) */
+.email-capture.interest-form {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 6px;
+  padding: 10px;
+}
+.email-capture.interest-form .interest-row {
+  display: flex;
+  gap: 6px;
+}
+.email-capture.interest-form .interest-row input { flex: 1; min-width: 0; }
+.email-capture.interest-form input {
+  border: 1px solid var(--border-2);
+  border-radius: 8px;
+  padding: 11px 12px;
+  background: white;
+}
+.email-capture.interest-form input:focus { border-color: var(--text); }
+.email-capture.interest-form .email-submit { width: 100%; padding: 13px 20px; }
+@media (max-width: 480px) {
+  .email-capture.interest-form .interest-row { flex-direction: column; }
+}
+
 /* Email confirmation popup (slides up from bottom) */
 .email-popup {
   position: fixed;
