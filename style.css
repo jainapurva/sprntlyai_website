@@ -188,7 +188,7 @@ nav {
 }
 .nav-links a:hover { color: var(--text); }
 
-/* Nav CTA — Book a demo button */
+/* Nav CTA — interest form anchor */
 .nav-cta {
   background: var(--text);
   color: var(--bg);
@@ -281,8 +281,16 @@ h1.hero-title em {
   font-size: 1.1rem;
   line-height: 1.55;
   color: var(--text-2);
-  margin-bottom: 36px;
+  margin-bottom: 20px;
   max-width: 540px;
+}
+
+.interest-hint {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: var(--text-3);
+  max-width: 440px;
+  line-height: 1.45;
 }
 
 /* ============================================
@@ -300,7 +308,7 @@ h1.hero-title em {
   min-height: 175px;
 }
 
-/* CTA button (Book a demo) */
+/* CTA button (legacy — kept for any remaining anchor-style CTAs) */
 .cta-button {
   display: inline-flex;
   align-items: center;
